@@ -1,0 +1,7 @@
+package: echologruslogger
+import:
+- package: github.com/Sirupsen/logrus
+- package: github.com/labstack/gommon
+  subpackages:
+  - log
+- package: github.com/smartystreets/goconvey/convey

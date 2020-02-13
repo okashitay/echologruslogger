@@ -1,0 +1,25 @@
+hash: 7d163dea132abce90de67eba29f3df4c0c7b786493ff23d3b1e999f6f5eae89f
+updated: 2016-07-03T01:09:13.181247071+09:00
+imports:
+- name: github.com/labstack/gommon
+  version: 722aa12d41c236ce78ff48eac1cafe0107ecdc9d
+  subpackages:
+  - log
+  - color
+- name: github.com/mattn/go-colorable
+  version: 9056b7a9f2d1f2d96498d6d146acd1f9d5ed3d59
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+- name: github.com/Sirupsen/logrus
+  version: f3cfb454f4c209e6668c95216c4744b8fddb2356
+- name: github.com/smartystreets/goconvey
+  version: c53abc99456fa3402dd33c15ee51c3e545e04a3f
+  subpackages:
+  - convey
+- name: github.com/valyala/fasttemplate
+  version: 3b874956e03f1636d171bda64b130f9135f42cff
+- name: golang.org/x/sys
+  version: 62bee037599929a6e9146f29d10dd5208c43507d
+  subpackages:
+  - unix
+devImports: []
