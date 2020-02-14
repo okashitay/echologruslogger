@@ -1,12 +1,12 @@
 package echologruslogger
 
 import (
-	"io"
-	"github.com/Sirupsen/logrus"
-	"os"
 	"encoding/json"
-	"sync"
+	"github.com/Sirupsen/logrus"
 	"github.com/labstack/gommon/log"
+	"io"
+	"os"
+	"sync"
 )
 
 type (
@@ -21,7 +21,7 @@ type (
 
 func New(logger *logrus.Logger) (l *EchoLogrusLogger) {
 	l = &EchoLogrusLogger{
-		logger: logger,
+		logger:      logger,
 		level:       log.INFO,
 		logruslevel: logrus.InfoLevel,
 		output:      os.Stdout,
@@ -41,8 +41,8 @@ func (l *EchoLogrusLogger) SetLevel(v log.Lvl) {
 		lvl = logrus.WarnLevel
 	case log.ERROR:
 		lvl = logrus.ErrorLevel
-	case log.FATAL:
-		lvl = logrus.FatalLevel
+		// case log.FATAL:
+		// lvl = logrus.FatalLevel
 	}
 	l.logruslevel = lvl
 	l.logger.Level = lvl
